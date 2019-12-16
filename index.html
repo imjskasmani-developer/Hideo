@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hideo</title>
+	<link rel="icon" href="assets/img/bg_robot.jpg">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/jssor.slider-27.4.0.min.js"></script>
+	<script>
+		 jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-0.7}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 topbar">
+				<nav id="myHeader" class="navbar navbar-expand-lg navbar-light fix">
+  <a class="navbar-brand" href="#"><img src="assets/img/logo.jpg" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto menu">
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">FEATURES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MEGA MENU</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">TEMPLATES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PORTFOLIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BLOG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li> 
+    </ul>
+  </div>
+</nav>
+			</div>
+		</div> <!-- topbar -->
+	</div> <!-- container-fluid -->
+
+	<div class="slider">
+				<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="assets/img/slider-1.gif" />
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/slider.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/slider-img.gif" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+	</div> <!-- slider -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="clean text-center">
+					<h1>Hideo HTML5 & CSS3 premium website template</h1>
+					<p>Clean, unique, easy to use</p>
+				</div> <!-- clean -->
+			</div>
+		</div>
+
+		<div class="row features text-center">
+			<div class="col-lg-4">
+				<img src="assets/img/pic-01.jpg" alt="">
+				<h5>Clean design</h5>
+				<p>Elegant layouts that help you organize your<br>content in the best way</p>
+			</div>
+			<div class="col-lg-4">
+				<img src="assets/img/pic-02.jpg" alt="">
+				<h5>HTML5 & CSS3</h5>
+				<p>Built with modern technologies like <b>HTML5</b><br>and CSS3. SEO optimised</p>
+			</div>
+			<div class="col-lg-4">
+				<img src="assets/img/pic-03.jpg" alt="">
+				<h5>Responsive design</h5>
+				<p>Compatible with various desktop, tablet, and<br>mobile devices.</p>
+			</div>
+		</div> <!-- features -->
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="clean text-center">
+					<h1>Why Choose Hideo?</h1>
+				</div> <!-- clean -->
+			</div>
+		</div>
+
+		<div class="row easy">
+			<div class="col-lg-4">
+				<div class="stars">
+					<ul>
+						<li class="active"><a href="#"><i class="fa fa-star"></i>Easy customization</a></li>
+						<li><a href="#"><i class="fa fa-star"></i>Multiple headers and footers</a></li>
+						<li><a href="#"><i class="fa fa-star"></i>Css framework</a></li>
+						<li><a href="#"><i class="fa fa-star"></i>Retina Ready UI</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 centerimg">
+				<img src="assets/img/pic-04.jpg" alt="" class="text-center">
+			</div>
+			<div class="col-lg-4">
+				<div class="custom">
+					<h4>Easy customization</h4>
+					<p>Hideo is build with easy customization in mind. Out of the box<br>you get more than 30 page template, 10 color schemes and multiple home page layouts variants, from corporate to agency<br>portfolio, including a one page version...</p>
+				</div> <!-- custom -->
+				<div class="custom">
+					<h4>Building blocks</h4>
+					<p>All layouts are made of sections, that you can easily combine to<br>fit your specific project.</p>
+				</div> <!-- custom -->
+				<div class="just">
+					<p><i class="fa fa-quote-left left"></i>Just copy and paste the block you need to easily build your layout!<i class="fa fa-quote-right right"></i></p>
+				</div>
+			</div>
+		</div> <!-- ease -->
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="clean text-center">
+					<h1>Our work</h1>
+					<p>We do a lot of things, we put them inside squared boxes</p>
+				</div> <!-- clean -->
+			</div>
+		</div>
+
+		<div class="row work">
+			<div class="col-lg-12">
+				<img src="assets/img/pic-10.gif" alt="">
+				<img src="assets/img/pic-11.jpg" alt="">
+				<img src="assets/img/pic-12.jpg" alt="">
+				<img src="assets/img/pic-13.jpg" alt="">
+				<img src="assets/img/pic-14.jpg" alt="">
+			</div>
+			<div class="col-lg-12">
+				<img src="assets/img/pic-15.jpg" alt="">
+				<img src="assets/img/pic-16.jpg" alt="">
+				<img src="assets/img/pic-17.jpg" alt="">
+				<img src="assets/img/pic-18.jpg" alt="">
+				<img src="assets/img/pic-19.jpg" alt="">
+			</div>
+		</div> <!-- work -->
+	</div> <!-- container -->
+
+
+	<div class="future">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="clean text-center">
+						<h1>You can't stop the future</h1>
+						<p>Clean design, modern and minimal, Hideo is the new way to go</p>
+					</div> <!-- clean -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<img src="assets/img/pic-05.png" class="hundred" alt="">
+				</div>
+			</div>
+		</div>
+	</div> <!-- future -->
+
+	<div class="space">
+		<div class="overlay">
+			<div class="container">
+				<div class="col-lg-12 text-center limited">
+					<div class="opacity">
+						<a href="#"><i class="fa fa-rocket fa-2x"></i></a>
+						<h1>For the wise man looks into space and he knows<br> there is no limited dimensions.</h1>
+					</div>
+				</div>
+			</div>
+		</div> <!-- overlay -->
+	</div> <!-- space -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="clean text-center">
+					<h1>Meet our team</h1>
+					<p class="team">The Duchees took her choice, and was gone in a moment. Let's go on with the game;<br>the Queen said to Alice; and Alice was too much frightened to say a word, but slowly followed her back to the croquet-ground.</p>
+				</div> <!-- clean -->
+			</div>
+		</div>
+
+		<div class="row members">
+			<div class="col-lg-3">
+				<div class="card text-center">
+					<img src="assets/img/pic-06.jpg" alt="/" class="card-img">
+					<div class="card-body">
+						<h5 class="card-title">Janice Rand</h5>
+						<p class="card-text">Executive Director</p>
+					</div>
+				</div> <!-- card -->
+			</div> <!-- col-lg-3 -->
+			<div class="col-lg-3">
+				<div class="card text-center">
+					<img src="assets/img/pic-07.jpg" alt="/" class="card-img">
+					<div class="card-body">
+						<h5 class="card-title">Rick Deckard</h5>
+						<p class="card-text">Salesman</p>
+					</div>
+				</div> <!-- card -->
+			</div> <!-- col-lg-3 -->
+			<div class="col-lg-3">
+				<div class="card text-center">
+					<img src="assets/img/pic-08.jpg" alt="/" class="card-img">
+					<div class="card-body">
+						<h5 class="card-title">Christine Chapel</h5>
+						<p class="card-text">Graphic designer</p>
+					</div>
+				</div> <!-- card -->
+			</div> <!-- col-lg-3 -->
+			<div class="col-lg-3">
+				<div class="card text-center">
+					<img src="assets/img/pic-09.jpg" alt="/" class="card-img">
+					<div class="card-body">
+						<h5 class="card-title">Leon Kowalski</h5>
+						<p class="card-text">Programmer</p>
+					</div>
+				</div> <!-- card -->
+			</div> <!-- col-lg-3 -->
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="clean text-center">
+					<h1>Keep in touch</h1>
+					<p>We would love to hear from you</p>
+				</div> <!-- clean -->
+			</div>
+		</div>
+
+		<div class="row contact">
+			<div class="col-lg-8 m-auto dashed">
+				<div class="row">
+					
+					<div class="col-lg-6 neko">
+						<h5>Little NEKO</h5>
+						<p><i class="fa fa-map-marker"></i>2001 Space Odyseey<br>Houston, Texas - USA<br><i class="fa fa-phone"></i>256.478.3252<br><i class="fa fa-envelope"></i>little@little-neko.com</p>
+					</div> <!-- neko -->
+					
+					<div class="col-lg-6 form">
+						<form>
+							<div class="form-group">
+								<label for="user">Name</label>
+								<input type="text" id="user" class="form-control" placeholder="Enter name">
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="text" id="email" class="form-control" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="comment">Comments</label>
+								<textarea type="text" id="comment" class="form-control" placeholder="Enter your message..."></textarea>
+							</div>
+							<a href="#" class="btn submit">Submit</a>
+						</form>
+					</div> <!-- form -->
+				
+				</div>
+			</div> <!-- dashed -->
+		</div>
+
+	</div> <!-- container -->
+
+	<div class="hideo">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h1>Hideo is the template you need for your next project</h1>
+					<p>Spread the word :)</p>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="#" class="btn facebook"><i class="fa fa-facebook"></i>share me</a></li>
+						<li class="list-inline-item"><a href="#" class="btn twitter"><i class="fa fa-twitter"></i>share me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> <!-- hideo -->
+
+	<footer>
+		<div class="container">
+			<div class="col-lg-12 text-center">
+				<ul class="list-inline">
+					<li class="list-inline-item text-center"><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li class="list-inline-item text-center"><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li class="list-inline-item text-center"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li class="list-inline-item text-center"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li class="list-inline-item text-center"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				</ul>
+				<p>Copyright &copy; 2012 <span>Little NEKO</span> / All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
